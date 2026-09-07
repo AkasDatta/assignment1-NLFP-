@@ -6,3 +6,4 @@ function describeValue(value) {
 }
 
 console.log(describeValue());
+console.log(describeValue(5));
