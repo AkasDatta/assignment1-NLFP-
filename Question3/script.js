@@ -2,7 +2,11 @@
 function validateUserName(userName) {
   if (userName.lemngth < 4) {
     return "Too short";
-  } else if (userName.includes(" "){
-  return "No Space Allowed";
+  } else if (userName.includes(" ")) {
+    return "No Space Allowed";
+  } else if (userName.toLowerCase().includes(" ")) {
+    return "Received words";
+  } else {
+    return "Available";
   }
 }
