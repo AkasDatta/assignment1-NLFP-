@@ -1,6 +1,6 @@
 // Question 3
 function validateUserName(userName) {
-  if (userName.lemngth < 4) {
+  if (userName.length < 4) {
     return "Too short";
   } else if (userName.includes(" ")) {
     return "No Space Allowed";
@@ -10,3 +10,4 @@ function validateUserName(userName) {
     return "Available";
   }
 }
+console.log(validateUserName("a b"));
